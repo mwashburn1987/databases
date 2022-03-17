@@ -24,11 +24,11 @@ CREATE TABLE messages (
   /* Describe your table here.*/
   id INT NOT NULL AUTO_INCREMENT,
   message text (255),
-  user_id int,
-  room_id int,
+  username text (20),
+  roomname text (15),
   date_time DATETIME,
-  FOREIGN KEY (user_id) REFERENCES users(id),
-  FOREIGN KEY (room_id) REFERENCES rooms(id),
+  -- FOREIGN KEY (user_id) REFERENCES users(id),
+  -- FOREIGN KEY (room_id) REFERENCES rooms(id),
   PRIMARY KEY (id)
 );
 
